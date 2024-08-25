@@ -18,6 +18,9 @@ const config: Config = {
       fontFamily: {
         yk: ["var(--font-yanone-kaffeesatz)"],
       },
+      fontSize: {
+        root: "var(--font-size-root)",
+      },
       screens: {
         tablet: "640px",
         desktop: "1024px",
