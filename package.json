@@ -26,6 +26,7 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/node": "^20",
     "@types/react": "^18",
