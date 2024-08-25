@@ -22,6 +22,7 @@
     "dayjs": "^1.11.12",
     "js-cookie": "^3.0.5",
     "next": "14.2.5",
+    "next-sitemap": "^4.2.3",
     "react": "^18",
     "react-dom": "^18"
   },
