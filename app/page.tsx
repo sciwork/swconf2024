@@ -11,11 +11,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Home() {
   return (
     <section id="hero-section">
-      <div className="tw-w-screen tw-h-screen tw-bg-gradient-to-b tw-from-[#FEDFE1] tw-to-[#FFF] tw-relative">
-        <header>
-          <div className="lg:tw-pt-20 tw-w-[95%] tw-flex tw-flex-col tw-items-center tw-pt-5 ">
-            <div className="tw-flex tw-w-[95%] xl:tw-w-[110rem]  tw-justify-between tw-items-center tw-relative tw-px-5 tw-pt-8 tw-pb-14">
-              <div className="tw-absolute tw-top-0 tw-left-0 tw-h-screen tw-w-full tw-border-2 tw-rounded-md tw-border-white tw-hidden xl:tw-block"></div>
+      <div className="tw-w-screen tw-h-screen tw-bg-gradient-to-b tw-from-[#FEDFE1] tw-to-[#FFF] tw-relative overflow-y-scroll">
+        <header className="tw-w-[100%] tw-h-[100%]">
+          <div className="lg:tw-pt-20 tw-w-[100%] tw-h-[100%] tw-flex tw-flex-col tw-items-center tw-pt-5">
+            <div className="tw-flex tw-w-[100%] xl:tw-w-[110rem]  tw-justify-between tw-items-center tw-relative tw-px-5 tw-pt-8 tw-pb-14 border-l-2 tw-border-white">
+              <div className="tw-absolute tw-h-[100%] tw-top-0 tw-left-0 tw-w-full tw-border-t-2 tw-border-l-2 tw-border-r-2 tw-rounded-md tw-border-white tw-hidden xl:tw-block tw-z-[5]"></div>
               <div className="tw-flex">
                 <FontAwesomeIcon
                   icon={faDiscord}
@@ -44,7 +44,9 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <p> The main hero section Content</p>
+            <div className="tw-flex tw-w-[100%] xl:tw-w-[110rem] tw-h-[100%] tw-justify-center tw-border-l-2 tw-border-r-2 tw-border-white">
+              <p> The main hero section Content</p>
+            </div>
           </div>
         </header>
       </div>
