@@ -2,6 +2,7 @@ import clsx from "clsx";
 import { Inter, Yanone_Kaffeesatz } from "next/font/google";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import Hero from "@/components/Hero";
 import "./globals.css";
 
 config.autoAddCss = false;
@@ -78,11 +79,14 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={clsx(
-          "tw-relative tw-flex tw-min-h-screen tw-w-full tw-flex-col tw-overscroll-none tw-bg-gray-200",
+          "tw-relative tw-flex tw-min-h-screen tw-w-full tw-flex-col tw-overscroll-none tw-bg-white",
           inter.className,
           yanone.variable,
         )}
       >
+        <header className="tw-mb-20">
+          <Hero />
+        </header>
         <main className="tw-grow">{children}</main>
       </body>
     </html>
