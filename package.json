@@ -16,7 +16,7 @@
     "@mdx-js/loader": "^3.0.1",
     "@mdx-js/react": "^3.0.1",
     "@next/mdx": "^14.2.5",
-    "@tailwindcss/typography": "^0.5.14",
+    "@tailwindcss/typography": "^0.5.15",
     "@types/mdx": "^2.0.13",
     "clsx": "^2.1.1",
     "dayjs": "^1.11.12",
