@@ -1,3 +1,4 @@
+import typography from "@tailwindcss/typography";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -18,15 +19,13 @@ const config: Config = {
       fontFamily: {
         yk: ["var(--font-yanone-kaffeesatz)"],
       },
-      fontSize: {
-        root: "var(--font-size-root)",
-      },
       screens: {
         tablet: "640px",
         desktop: "1024px",
       },
     },
   },
-  plugins: [],
+  plugins: [typography],
 };
+
 export default config;
