@@ -6,6 +6,11 @@ const routes = [
     name: "Welcome",
     disabled: false,
   },
+  {
+    path: "/program",
+    name: "Program",
+    disabled: false,
+  },
 ];
 
 export default routes;
