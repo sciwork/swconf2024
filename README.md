@@ -1,5 +1,7 @@
 # sciwork 2024 Conference Repository
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2b43093f-4c05-4cdb-b868-963896c28928/deploy-status)](https://app.netlify.com/sites/swconf2024/deploys)
+
 This repository holds the websites for sciwork 2024 annual conferences. The site is hosted at [https://conf2024.sciwork.dev](https://conf2024.sciwork.dev) via Netlify. It is built using [Next.js](https://nextjs.org/) bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and [Tailwind CSS](https://tailwindcss.com/).
 
 ## Repository Structure

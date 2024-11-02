@@ -3,6 +3,7 @@ import { Inter, Yanone_Kaffeesatz } from "next/font/google";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import Hero from "@/components/Hero";
+import LocaleProvider from "@/contexts/locale";
 import "./globals.css";
 
 config.autoAddCss = false;
@@ -84,10 +85,13 @@ export default function RootLayout({
           yanone.variable,
         )}
       >
-        <header className="tw-mb-20">
-          <Hero />
-        </header>
-        <main className="tw-grow">{children}</main>
+        <LocaleProvider>
+          <header className="tw-mb-20">
+            <Hero />
+          </header>
+          <main className="tw-grow">{children}</main>
+          <div id="portal" />
+        </LocaleProvider>
       </body>
     </html>
   );
