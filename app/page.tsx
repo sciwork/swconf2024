@@ -1,9 +1,10 @@
-import Image from "next/image";
+import Article from "@/components/Article";
+import Content from "@/contents/home.mdx";
 
 export default function Home() {
   return (
-    <main className="tw-flex tw-min-h-screen tw-flex-col tw-items-center tw-justify-between tw-p-24">
-      sciwork conference 2024 coming soon
-    </main>
+    <Article>
+      <Content />
+    </Article>
   );
 }
