@@ -1,11 +1,11 @@
-import createMDX from '@next/mdx';
+import createMDX from "@next/mdx";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
     mdxRs: true,
   },
-  output: 'export',
+  output: "export",
   distDir: process.env.OUTPUTDIR,
   images: {
     unoptimized: true,
