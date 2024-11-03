@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import type { Viewport } from "next";
 import { Inter, Yanone_Kaffeesatz } from "next/font/google";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -15,6 +16,13 @@ const yanone = Yanone_Kaffeesatz({
   display: "swap",
   variable: "--font-yanone-kaffeesatz",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
 
 export async function generateMetadata() {
   return {
@@ -62,11 +70,6 @@ export async function generateMetadata() {
           sizes: "32x32",
         },
       ],
-    },
-    viewport: {
-      width: "device-width",
-      initialScale: 1,
-      maximumScale: 1,
     },
   };
 }
