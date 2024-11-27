@@ -42,18 +42,20 @@ const Hero = () => {
               )}
             </div>
             <div className="tw-flex tw-w-full tw-flex-col tw-items-center">
-              <div className="tw-mb-8 tw-flex tw-items-center tw-gap-x-2">
+              <div className="tw-mb-6 tw-flex tw-flex-col tw-items-center tw-gap-4 tablet:tw-mb-8 tablet:tw-flex-row tablet:tw-gap-2">
                 <Image
                   className="tw-size-12"
                   src={iconImg}
                   alt="sciwork icon"
                 />
-                <div className="tw-font-yk tw-text-7xl">sciwork conference</div>
+                <div className="tw-font-yk tw-text-5xl tablet:tw-text-7xl">
+                  sciwork conference
+                </div>
               </div>
-              <div className="tw-font-yk tw-text-3xl">
+              <div className="tw-font-yk tw-text-xl tablet:tw-text-3xl">
                 December 14th to 15th
               </div>
-              <div className="tw-font-yk tw-text-3xl">
+              <div className="tw-font-yk tw-text-xl tablet:tw-text-3xl">
                 National Taiwan University
               </div>
             </div>
