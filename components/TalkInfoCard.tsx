@@ -20,7 +20,7 @@ const TalkInfoCard = ({ className, variant, talk, ...props }: Props) => {
     <div
       className={clsx(
         "tw-rounded-3xl tw-bg-gradient-to-b tw-p-8 tablet:tw-rounded-2xl",
-        "tw-from-red-200 tw-to-red-100",
+        variant === "general" && "tw-from-red-200 tw-to-red-100",
         variant === "talks" && "tw-from-indigo-200 tw-to-indigo-100",
         variant === "training" && "tw-from-purple-200 tw-to-purple-100",
         variant === "booths" && "tw-from-pink-200 tw-to-pink-100",
