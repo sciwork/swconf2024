@@ -53,7 +53,7 @@ const Hero = () => {
                 </div>
               </div>
               <div className="tw-font-yk tw-text-xl tablet:tw-text-3xl">
-                December 14th to 15th
+                December 14th
               </div>
               <div className="tw-font-yk tw-text-xl tablet:tw-text-3xl">
                 National Taiwan University
