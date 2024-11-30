@@ -80,17 +80,19 @@ const TalkInfoCard = ({ className, variant, talk, ...props }: Props) => {
       >
         {talk.start} - {talk.end}
       </div>
-      <div
-        className={clsx(
-          "tw-mt-2 tw-line-clamp-3 tablet:tw-mt-4",
-          variant === "general" && "tw-text-rose-700",
-          variant === "talks" && "tw-text-indigo-700",
-          variant === "training" && "tw-text-purple-700",
-          variant === "booths" && "tw-text-pink-700",
-        )}
-      >
-        {talk.description}
-      </div>
+      {talk.description && (
+        <div
+          className={clsx(
+            "tw-mt-2 tablet:tw-mt-4",
+            variant === "general" && "tw-text-rose-700",
+            variant === "talks" && "tw-text-indigo-700",
+            variant === "training" && "tw-text-purple-700",
+            variant === "booths" && "tw-text-pink-700",
+          )}
+        >
+          {talk.description}
+        </div>
+      )}
     </div>
   );
 };
