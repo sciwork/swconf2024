@@ -1,3 +1,4 @@
+import { existsSync } from "fs";
 import { Metadata, ResolvingMetadata } from "next";
 import routes from "@/configurations/routes";
 import Article from "@/components/Article";
@@ -6,6 +7,9 @@ import Content from "@/components/Content";
 export function generateStaticParams() {
   return routes
     .filter((route) => !route.disabled && route.path !== "/")
+    .filter((route) => {
+      return !existsSync(`app/${route.name.toLowerCase()}/page.tsx`);
+    })
     .map((route) => ({
       page: route.name.toLowerCase(),
     }));
