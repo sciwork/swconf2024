@@ -11,6 +11,16 @@ const routes = [
     name: "Program",
     disabled: false,
   },
+  {
+    path: "/training",
+    name: "Training",
+    disabled: false,
+  },
+  {
+    path: "/projects",
+    name: "Projects",
+    disabled: false,
+  },
 ];
 
 export default routes;

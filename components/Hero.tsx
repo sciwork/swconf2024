@@ -21,7 +21,7 @@ const Hero = () => {
           <div className="tw-w-full tw-rounded-md tw-border-x-2 tw-border-t-2 tw-border-none tw-border-white tablet:tw-border-solid">
             <div className="tw-flex tw-w-full tw-items-center tw-justify-between tw-px-5 tw-pb-14 tw-pt-8">
               <div className="tw-flex">
-                <SocialLink icon={faDiscord} to="https://discord.gg/PaWC7vHz" />
+                <SocialLink icon={faDiscord} to="https://discord.gg/6MAkFrD" />
                 <SocialLink
                   icon={faXTwitter}
                   to="https://twitter.com/intent/tweet?screen_name=sciwork&ref_src=twsrc%5Etfw"
@@ -42,18 +42,20 @@ const Hero = () => {
               )}
             </div>
             <div className="tw-flex tw-w-full tw-flex-col tw-items-center">
-              <div className="tw-mb-8 tw-flex tw-items-center tw-gap-x-2">
+              <div className="tw-mb-6 tw-flex tw-flex-col tw-items-center tw-gap-4 tablet:tw-mb-8 tablet:tw-flex-row tablet:tw-gap-2">
                 <Image
                   className="tw-size-12"
                   src={iconImg}
                   alt="sciwork icon"
                 />
-                <div className="tw-font-yk tw-text-7xl">sciwork conference</div>
+                <div className="tw-font-yk tw-text-5xl tablet:tw-text-7xl">
+                  sciwork conference
+                </div>
               </div>
-              <div className="tw-font-yk tw-text-3xl">
-                December 14th to 15th
+              <div className="tw-font-yk tw-text-xl tablet:tw-text-3xl">
+                December 14th
               </div>
-              <div className="tw-font-yk tw-text-3xl">
+              <div className="tw-font-yk tw-text-xl tablet:tw-text-3xl">
                 National Taiwan University
               </div>
             </div>
