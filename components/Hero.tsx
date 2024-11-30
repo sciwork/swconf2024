@@ -21,7 +21,7 @@ const Hero = () => {
           <div className="tw-w-full tw-rounded-md tw-border-x-2 tw-border-t-2 tw-border-none tw-border-white tablet:tw-border-solid">
             <div className="tw-flex tw-w-full tw-items-center tw-justify-between tw-px-5 tw-pb-14 tw-pt-8">
               <div className="tw-flex">
-                <SocialLink icon={faDiscord} to="https://discord.gg/PaWC7vHz" />
+                <SocialLink icon={faDiscord} to="https://discord.gg/6MAkFrD" />
                 <SocialLink
                   icon={faXTwitter}
                   to="https://twitter.com/intent/tweet?screen_name=sciwork&ref_src=twsrc%5Etfw"
