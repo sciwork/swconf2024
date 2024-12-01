@@ -8,7 +8,10 @@ type Props = {
 const TaskInfoList = ({ className, children }: Props) => {
   return (
     <div
-      className={clsx("tw-flex tw-flex-col tw-gap-6 tablet:tw-gap-8", children)}
+      className={clsx(
+        "tw-flex tw-flex-col tw-gap-6 tablet:tw-gap-8",
+        className,
+      )}
     >
       {children}
     </div>
