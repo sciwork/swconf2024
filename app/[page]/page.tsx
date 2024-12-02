@@ -8,10 +8,10 @@ export function generateStaticParams() {
   return routes
     .filter((route) => !route.disabled && route.path !== "/")
     .filter((route) => {
-      return !existsSync(`app/${route.name.toLowerCase()}/page.tsx`);
+      return !existsSync(`app/${route.path.substring(1).toLowerCase()}/page.tsx`);
     })
     .map((route) => ({
-      page: route.name.toLowerCase(),
+      page: route.path.substring(1).toLowerCase(),
     }));
 }
 
@@ -26,7 +26,7 @@ export async function generateMetadata(
   const previousImages = (await parent).openGraph?.images || [];
 
   return {
-    title: routes.find((route) => route.name.toLowerCase() === pageName)?.name,
+    title: routes.find((route) => route.path.substring(1).toLowerCase() === pageName)?.name,
     openGraph: {
       images: [...previousImages],
     },

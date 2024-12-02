@@ -28,10 +28,10 @@ const TalkInfoCard = ({ className, variant, talk, ...props }: Props) => {
       )}
       {...props}
     >
-      <div className="tw-flex tw-items-center tw-gap-2">
+      <div className="tw-mb-1 tw-flex tw-flex-wrap tw-items-center tw-gap-2">
         <div
           className={clsx(
-            "tw-font-yk tw-text-2xl tw-font-medium",
+            "tw-font-yk tw-text-2xl tw-font-medium tw-leading-none",
             variant === "general" && "tw-text-rose-800",
             variant === "talks" && "tw-text-indigo-800",
             variant === "training" && "tw-text-purple-800",
