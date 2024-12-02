@@ -39,9 +39,9 @@ export async function generateMetadata() {
       siteName: "sciwork 2024",
       images: [
         {
-          url: "/sw23_meta_img.jpg",
+          url: "/sw24_meta_img.png",
           width: 1024,
-          height: 512,
+          height: 1024,
         },
       ],
       locale: "en_US",
