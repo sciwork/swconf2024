@@ -21,6 +21,11 @@ const routes = [
     name: "Projects",
     disabled: false,
   },
+  {
+    path: "/code-of-conduct",
+    name: "Code of conduct",
+    disabled: false,
+  },
 ];
 
 export default routes;
