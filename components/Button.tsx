@@ -42,7 +42,7 @@ const Button = ({
         {
           "tw-bg-rose-500 tw-text-white hover:tw-bg-rose-700":
             variant === "default",
-          "tw-bg-yellow-300 tw-text-black hover:tw-bg-yellow-400":
+          "tw-bg-orange-400 tw-text-white hover:tw-bg-orange-600":
             variant === "action",
         },
       )}
