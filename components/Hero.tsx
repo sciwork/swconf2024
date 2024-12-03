@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { REGISTER_URL } from "@/configurations/constants";
 import {
   faDiscord,
   faFacebook,
@@ -6,6 +7,7 @@ import {
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import routes from "@/configurations/routes";
+import Button from "@/components/Button";
 import SocialLink from "@/components/IconLink";
 import MobileNavigator from "@/components/MenuDrawer";
 import iconImg from "@/assets/android-chrome-192x192.png";
@@ -13,6 +15,8 @@ import iconImg from "@/assets/android-chrome-192x192.png";
 const Hero = () => {
   const hasOtherPages =
     routes.filter((route) => !route.disabled && route.path !== "/").length > 0;
+  const eventDate = new Date('2024-12-14T00:00:00-08:00');
+  const currentDate = new Date();
 
   return (
     <div className="tw-w-screen tw-bg-gradient-to-b tw-from-rose-100 tw-to-white">
@@ -58,6 +62,11 @@ const Hero = () => {
               <div className="tw-font-yk tw-text-xl tablet:tw-text-3xl">
                 National Taiwan University
               </div>
+              {currentDate < eventDate && (
+                <Button variant="action" to={REGISTER_URL} target="_blank">
+                  Sign up now!
+                </Button>
+              )}
             </div>
           </div>
         </div>
