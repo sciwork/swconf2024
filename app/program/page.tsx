@@ -36,6 +36,20 @@ const Page = () => {
         />
         <ScheduleTime time="10:00" />
         <div className="tw-grid tw-grid-cols-1 tw-gap-6 tablet:tw-grid-cols-2">
+          <TaskInfoList className="tw-order-1 tablet:tw-order-1">
+            <TalkInfoCard
+              className="tw-h-full"
+              talk={{
+                title: "NASA TOPS Training",
+                description: "Morning Session: Improving Shared Code with Findable, Accessible, Interoperable, and Reusable (FAIR) Principles: Master FAIR principles and best practices for sharing research code through hands-on exercises and practical examples.",
+                room: "R833",
+                start: "10:00",
+                end: "12:00",
+              }}
+              variant="training"
+            />
+          </TaskInfoList>
+
           <TaskInfoList className="tw-order-2 tablet:tw-order-1">
             <TalkInfoCard
               talk={{
@@ -100,7 +114,7 @@ const Page = () => {
             <TalkInfoCard
               talk={{
                 title: "Introduction - Pydoc-zhtw",
-                description: "",
+                description: "Introduce the project: Python Documentation Traditional- Chinese Translation",
                 room: "R716",
                 start: "11:20",
                 end: "11:30",
@@ -121,25 +135,13 @@ const Page = () => {
               variant="talks"
             />
           </TaskInfoList>
-          <TaskInfoList className="tw-order-1 tablet:tw-order-2">
-            <TalkInfoCard
-              className="tw-h-full"
-              talk={{
-                title: "NASA TOPS Training",
-                description: "",
-                room: "R833",
-                start: "10:00",
-                end: "12:00",
-              }}
-              variant="training"
-            />
-          </TaskInfoList>
         </div>
         <ScheduleTime time="12:00" />
         <TalkInfoCard
           talk={{
             title: "Lunch",
             description: "Lunch time.",
+            room: "All",
             start: "12:00",
             end: "13:30",
           }}
@@ -150,7 +152,7 @@ const Page = () => {
           <TalkInfoCard
             talk={{
               title: "NASA TOPS Training",
-              description: "",
+              description: "Group Activity: Practical exercises to enhance the openness and reproducibility of research.",
               room: "R833",
               start: "13:30",
               end: "15:00",
@@ -183,7 +185,7 @@ const Page = () => {
           <TalkInfoCard
             talk={{
               title: "NASA TOPS Training",
-              description: "",
+              description: "Group Presentations & Discussion: Share your findings and learn from others' approaches.",
               room: "R833",
               start: "16:00",
               end: "17:00",
@@ -206,6 +208,7 @@ const Page = () => {
           talk={{
             title: "Reception",
             description: "Reception",
+            room: "All",
             start: "17:00",
             end: "20:00",
           }}
