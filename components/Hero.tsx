@@ -65,7 +65,7 @@ const Hero = () => {
                 National Taiwan University
               </div>
               {currentDate < eventDate && (
-                <div className="tw-pt-5">
+                <div className="tw-flex tw-pt-5">
                   <Button variant="action" to={REGISTER_URL} target="_blank">
                     Sign up now!
                   </Button>
