@@ -63,9 +63,11 @@ const Hero = () => {
                 National Taiwan University
               </div>
               {currentDate < eventDate && (
-                <Button variant="action" to={REGISTER_URL} target="_blank">
-                  Sign up now!
-                </Button>
+                <div className="tw-pt-5">
+                  <Button variant="action" to={REGISTER_URL} target="_blank">
+                    Sign up now!
+                  </Button>
+                </div>
               )}
             </div>
           </div>
