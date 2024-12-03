@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { REGISTER_URL } from "@/configurations/constants";
 import {
