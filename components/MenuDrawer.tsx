@@ -6,7 +6,6 @@ import routes from "@/configurations/routes";
 import Button from "@/components/Button";
 import Drawer from "@/components/Drawer";
 import DrawerLink from "@/components/DrawerLink";
-import DrawerSecondaryLink from "./DrawerSecondaryLink";
 import Logo from "@/components/Logo";
 
 const MobileNavigator = () => {
@@ -33,9 +32,9 @@ const MobileNavigator = () => {
           </div>
           <div className="tw-pt-6 tw-pb-10 tw-border-t tw-border-t-gray-200">
             <p className="tw-px-6 tw-font-medium tw-leading-loose tw-font-yk tw-text-gray-400">Previous Conference</p>
-            <DrawerSecondaryLink to='https://conf2023.sciwork.dev/'>
+            <DrawerLink to='https://conf2023.sciwork.dev/' secondary is_blank>
               sciwork 2023
-            </DrawerSecondaryLink>
+            </DrawerLink>
           </div>
         </div>
       </Drawer>
