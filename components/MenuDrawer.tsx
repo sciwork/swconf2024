@@ -15,17 +15,27 @@ const MobileNavigator = () => {
     <>
       <Button onClick={toggleMenu}>Menu</Button>
       <Drawer show={isMenuOpen} onClick={toggleMenu}>
-        <div className="tw-px-6 tw-pb-4 tw-pt-8" onClick={toggleMenu}>
-          <Logo variant="light" />
-        </div>
-        <div onClick={toggleMenu}>
-          {routes
-            .filter((route) => !route.disabled)
-            .map((route) => (
-              <DrawerLink key={route.path} to={route.path}>
-                {route.name}
-              </DrawerLink>
-            ))}
+        <div className="tw-flex tw-flex-col tw-h-screen">
+          <div className="tw-grow">
+            <div className="tw-px-6 tw-pb-4 tw-pt-8" onClick={toggleMenu}>
+              <Logo variant="light" />
+            </div>
+            <div onClick={toggleMenu}>
+              {routes
+                .filter((route) => !route.disabled)
+                .map((route) => (
+                  <DrawerLink key={route.path} to={route.path}>
+                    {route.name}
+                  </DrawerLink>
+                ))}
+            </div>
+          </div>
+          <div className="tw-pt-6 tw-pb-10 tw-border-t tw-border-t-gray-200">
+            <p className="tw-px-6 tw-font-medium tw-leading-loose tw-font-yk tw-text-gray-400">Previous Conference</p>
+            <DrawerLink to='https://conf2023.sciwork.dev/' secondary is_blank>
+              sciwork 2023
+            </DrawerLink>
+          </div>
         </div>
       </Drawer>
     </>
