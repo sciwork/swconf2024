@@ -54,7 +54,7 @@ const Page = () => {
             <TalkInfoCard
               talk={{
                 title: "Introduction - cyntx",
-                description: "",
+                description: "Cytnx: An Introduction to the Tensor Network Library for Quantum Physics",
                 room: "R716",
                 start: "10:00",
                 end: "10:10",
