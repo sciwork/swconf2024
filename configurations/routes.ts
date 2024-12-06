@@ -26,6 +26,11 @@ const routes = [
     name: "Code of conduct",
     disabled: false,
   },
+  {
+    path: "/financial-aid",
+    name: "Financial Aid",
+    disabled: false,
+  },
 ];
 
 export default routes;
