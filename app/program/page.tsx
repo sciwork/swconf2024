@@ -29,6 +29,7 @@ const Page = () => {
             title: "Opening",
             description: "",
             room: "All",
+            persons: ["Yung-Yu Chen"],
             start: "9:30",
             end: "9:50",
           }}
@@ -43,6 +44,7 @@ const Page = () => {
                 title: "NASA TOPS Training",
                 description: "Morning Session: Improving Shared Code with Findable, Accessible, Interoperable, and Reusable (FAIR) Principles: Master FAIR principles and best practices for sharing research code through hands-on exercises and practical examples.",
                 room: "R833",
+                persons: ["James Powell"],
                 start: "10:00",
                 end: "12:00",
               }}
@@ -53,9 +55,10 @@ const Page = () => {
           <TaskInfoList className="tw-order-2 tablet:tw-order-1">
             <TalkInfoCard
               talk={{
-                title: "Introduction - cyntx",
-                description: "",
+                title: "Introduction - Cytnx",
+                description: "Cytnx: An Introduction to the Tensor Network Library for Quantum Physics",
                 room: "R716",
+                persons: ["Ying-Jer Kao"],
                 start: "10:00",
                 end: "10:10",
               }}
@@ -154,6 +157,7 @@ const Page = () => {
               title: "NASA TOPS Training",
               description: "Group Activity: Practical exercises to enhance the openness and reproducibility of research.",
               room: "R833",
+              persons: ["James Powell"],
               start: "13:30",
               end: "15:00",
             }}
@@ -187,6 +191,7 @@ const Page = () => {
               title: "NASA TOPS Training",
               description: "Group Presentations & Discussion: Share your findings and learn from others' approaches.",
               room: "R833",
+              persons: ["James Powell"],
               start: "16:00",
               end: "17:00",
             }}
