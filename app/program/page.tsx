@@ -209,16 +209,6 @@ const Page = () => {
           />
         </div>
         <ScheduleTime time="17:00" />
-        <TalkInfoCard
-          talk={{
-            title: "Reception",
-            description: "Reception",
-            room: "All",
-            start: "17:00",
-            end: "20:00",
-          }}
-          variant="general"
-        />
       </TaskInfoList>
     </Article>
   );
